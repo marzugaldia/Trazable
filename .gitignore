@@ -1,0 +1,9 @@
+/src/TestResults
+/src/.vs
+/src/Trazable.Bed/bin
+/src/Trazable.Bed/obj
+/src/Trazable.Engine/bin
+/src/Trazable.Engine/obj
+/src/Trazable.Engine/.vs
+/src/Trazable.Engine.Tests/bin
+/src/Trazable.Engine.Tests/obj
