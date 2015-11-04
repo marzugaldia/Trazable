@@ -71,9 +71,5 @@
         }
 
         #endregion
-
-        #region - Methods -
-
-        #endregion
     }
 }

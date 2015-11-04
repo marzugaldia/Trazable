@@ -2,6 +2,9 @@
 
 namespace Trazable.Engine.Base
 {
+    /// <summary>
+    /// Utility for representation conversion.
+    /// </summary>
     public static class RepresentationConversion
     {
         /// <summary>

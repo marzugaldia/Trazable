@@ -82,7 +82,7 @@
         /// </returns>
         public override string ToString()
         {
-            return string.Format("{0}   {1}   {2}", this.Sphere, this.Cylinder, this.Axis.Degree);
+            return string.Format("{0} {1} {2}", this.Sphere.ToString("F2"), this.Cylinder.ToString("F2"), this.Axis.Degree.ToString("F2"));
         }
 
         #endregion

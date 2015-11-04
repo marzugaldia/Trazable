@@ -205,6 +205,18 @@ namespace Trazable.Engine.Base
         }
 
         /// <summary>
+        /// Inverse propagate the astigmatic decomposition over a distance.
+        /// </summary>
+        /// <param name="d">The d.</param>
+        /// <param name="n">The n.</param>
+        /// <returns></returns>
+        public AstigmaticDecomposition PropagateReverse(double d, double n = 1.0)
+        {
+            return this.Propagate(-d, n);
+        }
+
+
+        /// <summary>
         /// Refractes this astigmatic decomposition with a target one.
         /// </summary>
         /// <param name="tgt">The TGT.</param>
@@ -212,6 +224,16 @@ namespace Trazable.Engine.Base
         public AstigmaticDecomposition Refracte(AstigmaticDecomposition tgt)
         {
             return this + tgt;
+        }
+
+        /// <summary>
+        /// Inverse the refraction of this astigmatic decomposition with a target one.
+        /// </summary>
+        /// <param name="tgt">The TGT.</param>
+        /// <returns></returns>
+        public AstigmaticDecomposition RefracteReverse(AstigmaticDecomposition tgt)
+        {
+            return tgt - this;
         }
 
         /// <summary>

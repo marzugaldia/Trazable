@@ -7,3 +7,10 @@
 /src/Trazable.Engine/.vs
 /src/Trazable.Engine.Tests/bin
 /src/Trazable.Engine.Tests/obj
+/src/packages
+/src/SetupTrazable/Debug
+/src/SetupTrazable/Release
+/src/Trazable.App/bin
+/src/Trazable.App/obj
+/src/Trazable.Service/bin
+/src/Trazable.Service/obj

@@ -117,4 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Input(SCA, spectacle, "Spectacle", -9, 3.75, 177);
+Input(PAM, cornea, "Cornea", 48.7, 83, 44.94, 177);
+Input(double, bvd, "BVD", 12);
+Input(double, ct, "CT", 0.497);
+Input(double, acd, "ACD", 3.19);
+Input(double, sf, "SF", -0.304);
+Output(SCA, ev, "EV");
+Output(SCA, theoricalIOL, "Theorical IOL");
+Input(SCA, realIOL, "Real IOL", -14.50, 3.5, 93);
+Output(SCA, resultSpectacle, "Result Spectacle");
+
+ev = spectacle.prop(bvd).ref(cornea).prop(ct).prop(acd).prop(sf);
+theoricalIOL = cornea.prop(ct).prop(acd).prop(sf).refinv(ev);
+resultSpectacle = cornea.refinv(realIOL.refinv(ev).propinv(ct).propinv(acd).propinv(sf)).propinv(bvd);</value>
+  </data>
 </root>
